@@ -33,3 +33,9 @@ https://www6.sos.state.oh.us/ords/f?p=VOTERFTP:DOWNLOAD::FILE:NO:2:P2_PRODUCT_NU
 3. ETL for data levels via Spark
 4. Storage into text files in HDFS? NoSQL?
 5. System to access stored data conveniently.
+
+## Idea bin:
+### Chunking data for a better experience
+Any given query could be overwhelming to users and maybe to resources. 
+1. Cluster to find maximum separation by region. 
+2. Use these regions to chunk data for user-selected search limiting and/or faster indexing (partitiioning). 
