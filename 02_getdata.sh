@@ -1,6 +1,7 @@
 #!/bin/sh
-url=#$(awk -F = '{print $2}' 01_setdatasource.txt)
+mkdir ../ohvoterdata
+url=$(awk -F = '{print }' 01_setdatasource.txt)
 for i in $(cat 01_setdatasource.txt);
-do 
-wget $url -P '/home/ohvoterdata/'
+do
+wget $url --no-check-certificate --content-disposition -P '../ohvoterdata/'                                                                     
 done
