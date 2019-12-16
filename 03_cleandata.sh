@@ -8,5 +8,5 @@
 perl -pe 's{"(.*?)"|,}{$1//"\t"}ge' SWVF_1_22.txt > nq1.txt
 perl -pe 's{"(.*?)"|,}{$1//"\t"}ge' SWVF_23_44.txt > nq2.txt
 perl -pe 's{"(.*?)"|,}{$1//"\t"}ge' SWVF_45_66.txt > nq3.txt
-perl -pe 's{"(.*?)"|,}{$1//"\t"}ge' SWVF_66_88.txt > nq4.txt
+perl -pe 's{"(.*?)"|,}{$1//"\t"}ge' SWVF_67_88.txt > nq4.txt
 cat nq1.txt nq2.txt nq3.txt nq4.txt > allfile.txt
